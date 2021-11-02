@@ -16,6 +16,9 @@
 		9C1203E727308F7900D5EE24 /* SwimmingTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1203E627308F7900D5EE24 /* SwimmingTestAppTests.swift */; };
 		9C1203F127308F7900D5EE24 /* SwimmingTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1203F027308F7900D5EE24 /* SwimmingTestAppUITests.swift */; };
 		9C1203F327308F7900D5EE24 /* SwimmingTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1203F227308F7900D5EE24 /* SwimmingTestAppUITestsLaunchTests.swift */; };
+		9C120402273090D200D5EE24 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C120401273090D200D5EE24 /* HealthKit.framework */; };
+		9C1204042730930F00D5EE24 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1204032730930F00D5EE24 /* HealthKitAssistant.swift */; };
+		9C12040627309B9F00D5EE24 /* SwimWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12040527309B9F00D5EE24 /* SwimWorkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		9C1203EC27308F7900D5EE24 /* SwimmingTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwimmingTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1203F027308F7900D5EE24 /* SwimmingTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingTestAppUITests.swift; sourceTree = "<group>"; };
 		9C1203F227308F7900D5EE24 /* SwimmingTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C1203FF273090D200D5EE24 /* SwimmingTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwimmingTestApp.entitlements; sourceTree = "<group>"; };
+		9C120401273090D200D5EE24 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9C1204032730930F00D5EE24 /* HealthKitAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAssistant.swift; sourceTree = "<group>"; };
+		9C12040527309B9F00D5EE24 /* SwimWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimWorkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C120402273090D200D5EE24 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,7 @@
 				9C1203E527308F7900D5EE24 /* SwimmingTestAppTests */,
 				9C1203EF27308F7900D5EE24 /* SwimmingTestAppUITests */,
 				9C1203CD27308F7800D5EE24 /* Products */,
+				9C120400273090D200D5EE24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +108,7 @@
 		9C1203CE27308F7800D5EE24 /* SwimmingTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C1203FF273090D200D5EE24 /* SwimmingTestApp.entitlements */,
 				9C1203CF27308F7800D5EE24 /* AppDelegate.swift */,
 				9C1203D127308F7800D5EE24 /* SceneDelegate.swift */,
 				9C1203D327308F7800D5EE24 /* ViewController.swift */,
@@ -106,6 +116,8 @@
 				9C1203D827308F7900D5EE24 /* Assets.xcassets */,
 				9C1203DA27308F7900D5EE24 /* LaunchScreen.storyboard */,
 				9C1203DD27308F7900D5EE24 /* Info.plist */,
+				9C1204032730930F00D5EE24 /* HealthKitAssistant.swift */,
+				9C12040527309B9F00D5EE24 /* SwimWorkout.swift */,
 			);
 			path = SwimmingTestApp;
 			sourceTree = "<group>";
@@ -125,6 +137,14 @@
 				9C1203F227308F7900D5EE24 /* SwimmingTestAppUITestsLaunchTests.swift */,
 			);
 			path = SwimmingTestAppUITests;
+			sourceTree = "<group>";
+		};
+		9C120400273090D200D5EE24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C120401273090D200D5EE24 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +280,9 @@
 			files = (
 				9C1203D427308F7800D5EE24 /* ViewController.swift in Sources */,
 				9C1203D027308F7800D5EE24 /* AppDelegate.swift in Sources */,
+				9C12040627309B9F00D5EE24 /* SwimWorkout.swift in Sources */,
 				9C1203D227308F7800D5EE24 /* SceneDelegate.swift in Sources */,
+				9C1204042730930F00D5EE24 /* HealthKitAssistant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwimmingTestApp/SwimmingTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPU5VJEBC9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwimmingTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,8 +488,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwimmingTestApp/SwimmingTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPU5VJEBC9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwimmingTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
